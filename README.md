@@ -17,8 +17,6 @@ The CRS method was implemented on Vision Transformers, utilizing a single A40 GP
 
 We modified the calculation inside the multi-head attention mechanism by replacing GEMM with the CRS method for three-dimensional tensors (query, key, and value vectors). We also replaced GEMM with CRS in the matrix multiplication used to calculate attention scores and context layers for four-dimensional tensors. As in the original CRS paper, we applied the method only to the backward pass to ensure unbiased gradients. The experiments were conducted with sampling ratios of 1 (GEMM), 0.5, and 0.3, using a batch size of 64 over 8 epochs on both datasets.
 
-![Vision Transformer Architecture](Screenshot%202024-08-15%20at%206.05.12%20PM.png)
-
 ## Results and Conclusion
 
 The experimental results showed that using the CRS method with a sampling ratio of 0.5 resulted in an accuracy drop of less than 0.4% on both datasets, while achieving at least a 1.2x memory saving. However, a sampling ratio of 0.3 led to a more noticeable accuracy drop, especially on the CIFAR-100 dataset, while still reducing peak memory usage by 1.5x.
