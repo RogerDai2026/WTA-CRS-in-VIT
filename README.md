@@ -129,4 +129,4 @@ This work is released under the **Apache 2.0** license.
 
 ## Contact
 
-**Roger Dai** ([qd8@rice.edu])(mailto:qd8@rice.edu)  
+**Roger Dai** [qd8@rice.edu](mailto:qd8@rice.edu)  
