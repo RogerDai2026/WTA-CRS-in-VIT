@@ -1,4 +1,4 @@
-# Monocular Depth Estimation Using Residual Diffusion
+# Exploring the Efficacy of the WTA-CRS Method on Vision Transformers
 
 **Author:** Roger Dai  
 **Date:** September 5, 2024
